@@ -1,0 +1,67 @@
+/* General Styles */
+.app-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image Grid Styles */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  /* Default: 2 columns (mobile-first) */
+  gap: 20px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Benefits Section */
+.benefits {
+  margin-top: 40px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  margin-right: 15px;
+}
+
+.benefit-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.benefit-description {
+  color: #555;
+}
+
+/* Responsive Design for Desktop */
+@media (min-width: 768px) {
+  /* For tablets and larger devices */
+  .image-grid {
+    grid-template-columns: repeat(4, 1fr);  /* Display 4 columns on tablets and above */
+  }
+}
+
+@media (min-width: 1024px) {
+  /* For desktop devices */
+  .image-grid {
+    grid-template-columns: repeat(4, 1fr);  /* 4 columns on desktop */
+  }
+
+  .benefit-item {
+    margin-bottom: 30px;  /* More space between benefit items on desktop */
+  }
+}
